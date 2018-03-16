@@ -21,7 +21,7 @@ def build_snakes(common_file, sci_file):
         for row in reader:
             s = Snake(0, 0, row["common name"], row["scientific name"]) 
             snakes.append(s)
-    
+    # test  test  test
     for snake in snakes:
         with open(sci_file, 'rt') as csvfile2:
             reader2 = csv.DictReader(csvfile2)
